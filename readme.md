@@ -8,8 +8,6 @@ Accelerate backend for [numhask-array](https://github.com/tonyday567/numhask-arr
 Workflow
 ---
 
-pkg_config hack courtesy of accelerate
-
 ```
 PKG_CONFIG_PATH=/usr/local/opt/libFFI/lib/pkgconfig stack build --test --ghc-options -freverse-errors
 ```
