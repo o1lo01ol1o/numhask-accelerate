@@ -10,7 +10,7 @@
 {-# OPTIONS_GHC -fno-warn-orphans #-}
 
 -- | safe-typed n-dimensional arrays with Accelerate arrays under the hood
-module NumHask.Accelerate where
+module NumHask.Array.Accelerate where
 
 import Data.Array.Accelerate.Array.Sugar (listToShape)
 import Data.Array.Accelerate.LLVM.Native (run)

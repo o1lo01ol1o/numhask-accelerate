@@ -49,3 +49,4 @@ tests:
     - tasty
     - tasty-hunit
     - tasty-quickcheck
+    - numhask-accelerate

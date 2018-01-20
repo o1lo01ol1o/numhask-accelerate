@@ -2,3 +2,8 @@ resolver: lts-10.3
 
 packages:
 - .
+
+extra-deps:
+  - dimensions-0.3.2.0
+  - git: https://github.com/tonyday567/numhask-array.git
+    commit: 32e38efb5a14bc1dcba179de1858acfd997c4d07
