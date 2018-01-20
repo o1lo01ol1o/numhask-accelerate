@@ -1,0 +1,51 @@
+name: numhask-accelerate
+version: '0.0.1'
+synopsis: See readme.md
+description: See readme.md for description.
+category: project
+author: Tony Day
+maintainer: tonyday567@gmail.com
+copyright: Tony Day (c) 2017
+license: BSD3
+github: tonyday567/numhask-accelerate
+extra-source-files:
+- readme.md
+- stack.yaml
+default-extensions:
+- NegativeLiterals
+- NoImplicitPrelude
+- OverloadedStrings
+- UnicodeSyntax
+dependencies:
+- base >=4.7 && <5
+- numhask
+- numhask-array
+library:
+  source-dirs: src
+  exposed-modules:
+  - NumHask.Array.Accelerate
+  dependencies:
+  - accelerate
+  - accelerate-llvm
+  - accelerate-llvm-native
+  - adjunctions >=4.0 && <5
+  - deepseq >=1.4.2.0 && <2
+  - dimensions
+  - distributive >=0.4 && <0.6
+  - ghc-typelits-natnormalise >=0.4 && <0.6
+  - protolude >=0.1 && <0.3
+  - singletons >=2.0 && <3
+  - typelits-witnesses >=0.2 && <0.3
+  - vector >=0.10 && <0.13
+tests:
+  test:
+    main: test.hs
+    source-dirs: test
+    dependencies:
+    - HUnit
+    - QuickCheck
+    - doctest
+    - protolude
+    - tasty
+    - tasty-hunit
+    - tasty-quickcheck
